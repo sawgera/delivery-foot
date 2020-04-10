@@ -1,0 +1,107 @@
+.modal
+    display: none
+    position: fixed 
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.4)
+    &_active
+        display: flex
+    &-dialog
+        max-width: 780px
+        width: 95%
+        background: #FFFFFF
+        border-radius: 5px
+        margin: auto
+        padding: 40px 45px
+    &-header
+        display: flex
+        align-items: center
+        justify-content: space-between   
+        margin-bottom: 45px  
+        &__title
+            margin: 0
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #000000
+        &__close
+            font-size: 35px
+            border: none
+            background-color: transparent 
+            outline: none 
+    &-body
+        margin-bottom: 52px        
+    &-footer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__price
+            background: #262626
+            border-radius: 5px
+            color: #FAFAFA
+            font-weight: bold
+            font-size: 20px
+            line-height: 23px
+            padding: 15px 20px
+    &-buttons
+        display: flex
+        align-items: center
+        
+        &__button
+            background: #1890FF
+            border-radius: 2px 
+            color: #ffffff
+            font-size: 16px
+            line-height: 24px 
+            border: none
+            padding: 8px 16px
+            margin-right: 15px
+        &__btn 
+            border-radius: 2px
+            border: none
+            font-size: 16px
+            line-height: 24px 
+            border: 1px solid #D9D9D9
+            background: #ffffff
+            color: #595959 
+            padding: 8px
+
+                         
+.food
+    &-row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 8px
+        border-bottom: 1px solid #D9D9D9
+        margin-bottom: 15px
+        &__name
+            font-size: 18px
+            line-height: 32px
+            color: #000000
+        &__prise
+            margin-left: auto
+            margin-right: 47px 
+            font-size: 20px
+            line-height: 32px
+    &-container
+        display: flex
+        align-items: center 
+        &__text
+            font-weight: normal
+            font-size: 16px
+            line-height: 24px
+            margin-left: 10px
+            margin-right: 10px
+        &__buttons
+            background: #FFFFFF
+            border: 1px solid #40A9FF
+            box-sizing: border-box
+            border-radius: 2px 
+            width: 39px
+            height: 32px
+            font-size: 14px
+            line-height: 22px 
+            color: #40A9FF                

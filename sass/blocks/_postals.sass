@@ -1,0 +1,130 @@
+.postal
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+.postals
+    background: #FFFFFF
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
+    border-radius: 7px
+    overflow: hidden 
+    margin-bottom: 30px
+    flex-basis: 32%
+    &-title
+        font-size: 24px
+        line-height: 32px
+        color: #000000
+        margin: 0
+        font-style: normal
+        font-weight: bold
+        font-weight: 400
+        width: 337px 
+    &-image 
+        max-width: 100%
+        object-fit: cover    
+    &-tag
+        padding-top: 10px
+        font-size: 18px
+        line-height: 21px
+        color: #8C8C8C 
+        width: 337px 
+        &__time 
+            padding-top: 10px
+            font-size: 18px
+            line-height: 21px
+            color: #8C8C8C 
+            width: 337px   
+    &-heading
+        display: flex
+        flex-direction: column
+        padding-top: 24px
+        padding-right: 24px
+        padding-left: 24px
+    &-info
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        margin-left: 24px
+        margin-bottom: 30px
+        &__buttons
+            margin-top: 24px
+            display: flex
+            align-items: center
+            margin-right: 32px
+            background: #1890FF
+            border-radius: 2px 
+            color: #ffffff 
+            outline: none
+            padding: 8px 16px
+            border: none 
+        &__price
+            margin-top: 38px
+            font-style: normal
+            font-weight: bold
+            font-size: 20px
+            line-height: 32px   
+
+@media (max-width: 1366px)
+    .postals
+        &-heading
+            padding-top: 20px
+            padding-right: 20px
+            padding-left: 20px
+        &-title
+            font-size: 18px
+            width: 337px
+        &-tag
+            max-width: 100%
+            font-size: 14px
+            line-height: 20px
+            &__time
+                max-width: 100%
+                font-size: 14px
+                line-height: 20px 
+
+@media (max-width: 992px)
+    .postals
+        flex-basis: 49%
+        &-tag
+            width: 90%
+            &__time
+                width: 90%
+            
+
+
+@media (max-width: 768px)
+    .postals
+        &-title
+            width: 90%
+            font-size: 24px
+        &-tag
+            max-width: 100%
+            &__time
+                width: 60%
+                   
+        &-info
+            flex-wrap: wrap
+
+
+@media (max-width: 578px) 
+    .postals
+        flex-basis: 100%
+        display: flex
+        align-items: center
+        flex-direction: column
+        &-title
+            max-width: 100%
+        &-tag
+            width: 100%
+            &__time
+                width: 100%
+        &-info
+            display: flex
+            align-items: center
+            justify-content: space-between
+            &__price
+                margin-right: 20px        
+               
+        
+
+             

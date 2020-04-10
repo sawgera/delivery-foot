@@ -1,0 +1,148 @@
+.restaurant
+    &-heading
+        display: flex
+        align-items: center
+        margin-bottom: 44px
+        &__title 
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 42px
+            color: #000000
+            margin-right: 30px
+        &__input
+            background: #fff
+            border: 1px solid #d9d9d9
+            border-radius: 2px  
+            font-size: 16px
+            line-height: 24px  
+            padding: 8px
+            width: 306px
+            background: url('../img/Vector.svg') no-repeat 
+            background-position: left 11px center
+            padding-left: 35px 
+            margin-left: auto
+.cards
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: space-between
+.card
+    background: #FFFFFF
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05)
+    border-radius: 7px  
+    overflow: hidden 
+    margin-bottom: 30px
+    flex-basis: 31%
+    text-decoration: none
+    &-image 
+        width: 384px
+        height: 250px
+        object-fit: cover
+    &-text 
+        padding-top: 20px
+        padding-bottom: 35px
+        padding-left: 23px
+        padding-right: 23px
+    &-heading
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &-title
+        margin: 0
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        color: #000000 
+    &-tag 
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 20px  
+        color: #FFFFFF
+        background: #262626
+        border-radius: 2px  
+        padding: 1px 8px 
+    &-info
+        display: flex
+        align-items: center
+        &__rating
+            margin-right: 26px
+            color: #ffc107
+            font-weight: bold
+            font-size: 18px
+            line-height: 32px
+
+        &__price
+            color: #8C8C8C
+            font-size: 18px
+            line-height: 32px
+            &:after
+                content: ""
+                width: 5px
+                height: 5px
+                background-color: #8C8C8C
+                display: inline-block
+                border-radius: 50%
+                vertical-align: middle
+                margin-left: 10px
+
+        &__category 
+            color: #8C8C8C
+            font-size: 18px
+            line-height: 32px 
+            margin-left: 10px
+.star
+    &-info
+        display: flex
+        align-items: center
+        &__rating
+            margin-right: 36px
+            color: #ffc107
+            font-weight: bold
+            font-size: 18px
+            line-height: 32px
+
+
+@media (max-width: 992px)
+    .card
+        flex-basis: 49%
+
+
+@media (max-width: 768px)
+    .card
+        &-title
+            font-size: 18px
+        &-info
+            flex-wrap: wrap
+            &__rating
+                flex-basis: 100%
+
+
+@media (max-width: 578px)
+    .restaurant
+        &-heading
+            &__title
+                font-size: 20px
+
+    .card
+        flex-basis: 100%
+        &-image
+            width: 100%
+
+@media (max-width: 480px)
+    .restaurant
+        &-heading
+            display: flex
+            flex-wrap: wrap
+            &__title
+                margin-right: 10px
+    .star
+        &-info
+            &__rating
+                margin-right: 10px
+                
+
+
+                                                  
